@@ -1,0 +1,27 @@
+#root {
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none; /* Remove qualquer estilo de lista padrão */
+  padding-left: 20px; /* Ajusta o padding da lista */
+}
+
+
+ul > li > p::before{
+  content: '\2937'; 
+  padding-right: 8px;
+}
+
+ul > li > a::before{
+  content: '\2B0E';
+  position: absolute; 
+  transform: translateX(-10px);
+  scale: 1.8;
+}
+
+ul > li {
+  position: relative; 
+}
